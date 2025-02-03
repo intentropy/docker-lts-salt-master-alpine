@@ -21,6 +21,6 @@ RUN \
         tornado                         \
         cryptography
 
-VOLUME /etc/salt
+VOLUME /etc/salt/pki
 
 ENTRYPOINT [ "/usr/bin/salt-master" ,  "-l" ,  "debug" ]
