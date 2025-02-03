@@ -23,4 +23,4 @@ RUN \
 
 VOLUME /etc/salt
 
-ENTRYPOINT [ "salt-master -l debug" ]
+ENTRYPOINT [ "/usr/bin/salt-master" ,  "-l" ,  "debug" ]
