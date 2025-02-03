@@ -1,0 +1,6 @@
+services:
+  salt-master:
+    image: salt-master:latest
+    hostname: salt-master
+    volumes:
+      - ~/volumes/salt-master:/etc/salt
