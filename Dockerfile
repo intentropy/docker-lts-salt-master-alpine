@@ -18,7 +18,7 @@ RUN \
     pip3 install    --no-cache-dir              \
                     --break-system-packages     \
                     --no-warn-script-location   \
-        salt==${SALT_VERSION}                   \
+        salt==$SALT_VERSION                     \
         backports.ssl_match_hostname    \
         backports.weakref               \
         tornado                         \
