@@ -7,3 +7,5 @@ services:
     ports:
       - 0.0.0.0:4505:4505
       - 0.0.0.0:4506:4506
+    environment:
+      - LOG_LEVEL: info
