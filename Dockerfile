@@ -32,6 +32,7 @@ RUN \
         pyyaml                          \
         distro                          \
         looseversion                    \
+        msgpack                         \
         cryptography            && \
     mkdir -p /etc/salt          && \
     echo "master: 127.0.0.1" >  \
