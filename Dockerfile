@@ -22,6 +22,14 @@ RUN \
         backports.ssl_match_hostname    \
         backports.weakref               \
         tornado                         \
+        cherrypy                        \
+        gitpython                       \
+        Mako                            \
+        pycrypto                        \
+        pycryptodome                    \
+        pygit2                          \
+        python-gnupg                    \
+        ZMQ                             \
         cryptography            && \
     mkdir -p /etc/salt          && \
     echo "master: 127.0.0.1" >  \
