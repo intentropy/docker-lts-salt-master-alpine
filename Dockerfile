@@ -16,7 +16,6 @@ RUN \
         musl-dev    \
         linux-headers           && \
     pip3 install    --no-cache-dir              \
-                    --break-system-packages     \
                     --no-warn-script-location   \
         salt==$SALT_VERSION                     \
         backports.ssl_match_hostname    \
@@ -30,6 +29,9 @@ RUN \
         pygit2                          \
         python-gnupg                    \
         ZMQ                             \
+        pyyaml                          \
+        distro                          \
+        looseversion                    \
         cryptography            && \
     mkdir -p /etc/salt          && \
     echo "master: 127.0.0.1" >  \
