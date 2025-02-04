@@ -2,6 +2,8 @@ FROM    alpine:latest
 
 LABEL   maintainer="Shane Hutter <shane.hutter@serversaustralia.com.au>"
 
+ARG SALT_VERSION=3006.9
+
 COPY    src/etc/apk/repositories    /etc/apk/repositories
 COPY    src/usr/bin/entrypoint.sh   /usr/bin/entrypoint
 
@@ -16,7 +18,7 @@ RUN \
     pip3 install    --no-cache-dir              \
                     --break-system-packages     \
                     --no-warn-script-location   \
-        salt==3006.9                    \
+        salt==${SALT_VERSION}                   \
         backports.ssl_match_hostname    \
         backports.weakref               \
         tornado                         \
