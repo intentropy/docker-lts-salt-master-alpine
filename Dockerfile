@@ -3,7 +3,7 @@ FROM    alpine:latest
 LABEL   maintainer="Shane Hutter <shane.hutter@serversaustralia.com.au>"
 
 COPY    src/etc/apk/repositories    /etc/apk/repositories
-COPY    src/usr/bin/entrypoint      /usr/bin/entrypoint
+COPY    src/usr/bin/entrypoint.sh   /usr/bin/entrypoint
 
 RUN \
     apk update                  && \
