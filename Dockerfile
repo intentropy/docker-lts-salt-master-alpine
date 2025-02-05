@@ -43,7 +43,10 @@ RUN \
         gcc         \
         musl-dev    \
         linux-headers           && \
-    chmod +x /usr/bin/entrypoint
+    chmod +x /usr/bin/entrypoint && \
+    mkdir -p src/etc/salt/master.d
+
+COPY src/etc/salt/master.d/api.conf /etc/salt/master.d/api.conf
 
 VOLUME /etc/salt/pki
 
