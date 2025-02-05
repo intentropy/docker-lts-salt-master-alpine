@@ -24,7 +24,6 @@ RUN \
         cherrypy                        \
         gitpython                       \
         Mako                            \
-        pycrypto                        \
         pycryptodome                    \
         pygit2                          \
         python-gnupg                    \
